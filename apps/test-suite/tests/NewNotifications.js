@@ -75,6 +75,9 @@ export async function test(t) {
           ios: {
             attachments: [{ uri: fileUri }],
           },
+          android: {
+            thumbnailUri: fileUri,
+          },
         });
       });
     });

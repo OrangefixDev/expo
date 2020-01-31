@@ -20,7 +20,9 @@ export interface IosNotificationRequestOptions {
   }[];
 }
 
-export interface AndroidNotificationRequestOptions {}
+export interface AndroidNotificationRequestOptions {
+  thumbnailUri?: string;
+}
 
 export type NotificationRequest = BaseNotificationRequest &
   (IosNotificationRequestOptions | AndroidNotificationRequestOptions);
